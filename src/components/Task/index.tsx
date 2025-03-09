@@ -1,11 +1,17 @@
 import style from "./Task.module.css";
 
-const Task = () => {
+export interface TaskProp {
+  id: number;
+  title: string;
+  priority: "High" | "Medium" | "Low";
+}
+
+const Task = ({ task }: { task: TaskProp }) => {
   return (
-    <div className={style.task}>
+    <li className={style.task} data-testid="task">
       <div className={style.taskHeader}>
-        <h2 data-testid="task-title">Title</h2>
-        <span>High</span>
+        <h2 data-testid="task-title">{task.title}</h2>
+        <span>{task.priority}</span>
       </div>
       <div className={style.taskBody}>
         <p>Description</p>
@@ -14,7 +20,7 @@ const Task = () => {
           <button>delete</button>
         </div>
       </div>
-    </div>
+    </li>
   );
 };
 
