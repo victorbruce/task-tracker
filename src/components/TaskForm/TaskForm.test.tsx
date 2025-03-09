@@ -3,10 +3,15 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import TaskForm from ".";
+import { TaskProvider } from "../../context/TaskContext";
 
 describe("Task Form Component", () => {
   beforeEach(() => {
-    render(<TaskForm />);
+    render(
+      <TaskProvider>
+        <TaskForm />
+      </TaskProvider>
+    );
   });
 
   it("should display an input field", () => {

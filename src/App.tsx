@@ -7,7 +7,7 @@ import Tasks from "./components/Tasks";
 
 export default function App() {
   return (
-    <div className={style.app}>
+    <div className={style.app} data-testid="app">
       <section aria-labelledby="tasks-heading">
         <h1 id="tasks-heading">Tasks:</h1>
         <Tasks />
