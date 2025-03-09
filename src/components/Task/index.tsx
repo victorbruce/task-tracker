@@ -1,12 +1,8 @@
 import style from "./Task.module.css";
+import { ITask, useTaskContext } from "../../context/TaskContext";
 
-export interface TaskProp {
-  id: number;
-  title: string;
-  priority: "High" | "Medium" | "Low";
-}
-
-const Task = ({ task }: { task: TaskProp }) => {
+const Task = ({ task }: { task: ITask }) => {
+  const { deleteTask } = useTaskContext();
   return (
     <li className={style.task} data-testid="task">
       <div className={style.taskHeader}>
@@ -17,7 +13,9 @@ const Task = ({ task }: { task: TaskProp }) => {
         <p>Description</p>
         <div className={style.actionBtns}>
           <button>edit</button>
-          <button>delete</button>
+          <button onClick={() => deleteTask(task.id)} aria-label="Delete Task">
+            delete
+          </button>
         </div>
       </div>
     </li>

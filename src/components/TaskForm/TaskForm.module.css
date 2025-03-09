@@ -21,6 +21,11 @@
   border-radius: 12px;
 }
 
+.select {
+  padding: 14px 8px;
+  border-radius: 12px;
+}
+
 .srOnly {
   position: absolute;
   width: 1px;
