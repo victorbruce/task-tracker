@@ -1,0 +1,30 @@
+.task {
+  padding: 12px 16px;
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskHeader span {
+  background-color: #ddd;
+  padding: 4px;
+  border-radius: 4px 6px;
+  font-size: 12px;
+}
+
+.taskBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actionBtns {
+  display: flex;
+  gap: 4px;
+}
