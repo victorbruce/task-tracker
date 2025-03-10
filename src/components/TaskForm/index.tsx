@@ -73,14 +73,14 @@ const AddIcon = () => {
         d="M12.2222 5.46631V19.4663"
         stroke="white"
         strokeWidth="2.5"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M5.22217 12.4663H19.2222"
         stroke="white"
         strokeWidth="2.5"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
