@@ -10,12 +10,14 @@
 
   --foreground: #171717;
   --background: #f9f9f9;
+  --border-color: #e5e7eb;
 }
 
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {

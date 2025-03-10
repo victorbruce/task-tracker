@@ -1,0 +1,8 @@
+.list {
+  background-color: white;
+  border: 20px solid transparent;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  overflow-y: auto;
+  max-height: 100%;
+}
