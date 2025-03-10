@@ -9,6 +9,7 @@ import {
 export interface ITask {
   id: number;
   title: string;
+  description?: string;
   priority: "High" | "Medium" | "Low";
 }
 
@@ -17,6 +18,7 @@ interface TaskContextType {
   priorityFilter: string;
   addTask: (task: ITask) => void;
   deleteTask: (id: number) => void;
+  updateTask: (task: ITask) => void;
   setPriorityFilter: (filter: string) => void;
 }
 
@@ -39,9 +41,20 @@ export const TaskProvider = ({ children }: { children: ReactNode }) => {
   const deleteTask = (id: number) =>
     setTasks(tasks.filter((task) => task.id !== id));
 
+  const updateTask = (updatedTask: ITask) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) => (task.id === updatedTask.id ? updatedTask : task))
+    );
+    
+    localStorage.setItem(
+      "tasks",
+      JSON.stringify(tasks.map((task) => (task.id === updatedTask.id ? updatedTask : task)))
+    );
+  };
+
   return (
     <TaskContext.Provider
-      value={{ tasks, priorityFilter, addTask, deleteTask, setPriorityFilter }}
+      value={{ tasks, priorityFilter, addTask, deleteTask, updateTask, setPriorityFilter }}
     >
       {children}
     </TaskContext.Provider>
