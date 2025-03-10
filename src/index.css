@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.High {
+  background-color: #dc2626;
+  color: white;
+}
+
+.Medium {
+  background-color: #f97316;
+  color: white;
+}
+
+.Low {
+  background-color: #16a34a;
+  color: white;
+}

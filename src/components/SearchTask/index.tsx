@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import style from './SearchTask.module.css';
 interface Props {
   onSearch: (query: string) => void;
 }
@@ -17,7 +17,7 @@ const SearchTask = ({ onSearch }: Props) => {
 
   return (
     <div>
-      <label htmlFor="searchTask" className="srOnly">
+      <label htmlFor="searchTask" className={style.srOnly}>
         Search tasks:
       </label>
       <input
@@ -27,6 +27,7 @@ const SearchTask = ({ onSearch }: Props) => {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         aria-label="Search tasks"
+        className={style.textInput}
       />
     </div>
   );
