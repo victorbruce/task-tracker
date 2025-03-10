@@ -5,7 +5,6 @@ import TaskForm from "./components/TaskForm";
 import Tasks from "./components/Tasks";
 import FilterTask from "./components/FilterTask";
 
-
 export default function App() {
   return (
     <div className={style.app} data-testid="app">
