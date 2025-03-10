@@ -1,5 +1,11 @@
 .app {
-  position: relative;
+  display: grid;
+  grid-template-rows: 84svh 1fr;
   max-width: 640px;
-  margin: 48px auto;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  gap: 1rem;
+  overflow: hidden;
 }
