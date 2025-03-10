@@ -14,12 +14,12 @@
 }
 
 .taskHeader h2 {
+  font-size: 20px;
+  color: #333;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  /* max-height: 3.6em;
-  line-height: 1.8em; */
 }
 
 @media (max-width: 768px) {
@@ -55,8 +55,7 @@
 
 .actionBtns button {
   cursor: pointer;
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in;
+
   border-radius: 4px;
   padding: 4px 8px;
   outline: none;
@@ -69,17 +68,19 @@
 
 .edit {
   background-color: #e7e5e4;
+  border: 1px solid transparent;
 }
 
 .edit:hover {
   background-color: #fafafa;
-  border: 1px solid var(--border-color);
 }
 
 .delete {
-  background-color: #111;
+  background-color: #fafafa;
+  border: 1px solid var(--border-color);
 }
 
 .delete:hover {
-  background-color: #dc2626;
+  background-color: #fff;
+  border: 1px solid red;
 }

@@ -1,14 +1,11 @@
-import { useState } from "react";
 import { useTaskContext } from "../../context/TaskContext";
 import style from "./Tasks.module.css";
 
 // components
 import Task from "../Task";
-import SearchTask from "../SearchTask";
 
-const Tasks = () => {
+const Tasks = ({ searchQuery }: { searchQuery: string }) => {
   const { tasks, priorityFilter } = useTaskContext();
-  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredTasks = tasks.filter(
     (task) =>
@@ -18,12 +15,15 @@ const Tasks = () => {
   );
 
   if (!filteredTasks.length) {
-    return <p>No tasks available</p>;
+    return (
+      <div className={style.empty}>
+        <p>No tasks available</p>
+      </div>
+    );
   }
 
   return (
     <div>
-      <SearchTask onSearch={setSearchQuery} />
       <ul aria-label="tasks" className={style.tasks}>
         {filteredTasks.map((task) => (
           <Task key={task.id} task={task} />

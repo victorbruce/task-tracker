@@ -56,28 +56,28 @@ const DeleteIcon = () => {
     >
       <path
         d="M3.16602 6.5415H5.16602H21.166"
-        stroke="white"
+        stroke="black"
         strokeWidth="1.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M19.166 6.5415V20.5415C19.166 21.0719 18.9553 21.5806 18.5802 21.9557C18.2052 22.3308 17.6964 22.5415 17.166 22.5415H7.16602C6.63558 22.5415 6.12687 22.3308 5.7518 21.9557C5.37673 21.5806 5.16602 21.0719 5.16602 20.5415V6.5415M8.16602 6.5415V4.5415C8.16602 4.01107 8.37673 3.50236 8.7518 3.12729C9.12688 2.75222 9.63558 2.5415 10.166 2.5415H14.166C14.6964 2.5415 15.2052 2.75222 15.5802 3.12729C15.9553 3.50236 16.166 4.01107 16.166 4.5415V6.5415"
-        stroke="white"
+        stroke="black"
         strokeWidth="1.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M10.166 11.5415V17.5415"
-        stroke="white"
+        stroke="black"
         strokeWidth="1.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M14.166 11.5415V17.5415"
-        stroke="white"
+        stroke="black"
         strokeWidth="1.2"
         strokeLinecap="round"
         strokeLinejoin="round"
