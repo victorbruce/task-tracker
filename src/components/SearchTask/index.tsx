@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Props {
   onSearch: (query: string) => void;
@@ -7,11 +7,13 @@ interface Props {
 const SearchTask = ({ onSearch }: Props) => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    setSearchQuery(value);
-    onSearch(value);
-  };
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      onSearch(searchQuery);
+    }, 300);
+
+    return () => clearTimeout(handler);
+  }, [searchQuery, onSearch]);
 
   return (
     <div>
@@ -23,7 +25,7 @@ const SearchTask = ({ onSearch }: Props) => {
         type="text"
         placeholder="Search tasks"
         value={searchQuery}
-        onChange={handleSearch}
+        onChange={(e) => setSearchQuery(e.target.value)}
         aria-label="Search tasks"
       />
     </div>
