@@ -7,12 +7,16 @@ import Task from "../Task";
 const Tasks = ({ searchQuery }: { searchQuery: string }) => {
   const { tasks, priorityFilter } = useTaskContext();
 
-  const filteredTasks = tasks.filter(
-    (task) =>
-      ((priorityFilter === "All" || task.priority === priorityFilter) &&
-        task.title.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      task.description?.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredTasks = tasks.filter((task) => {
+    const matchesPriority =
+      priorityFilter === "All" || task.priority === priorityFilter;
+      
+    const matchesSearch =
+      task.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      task.description?.toLowerCase().includes(searchQuery.toLowerCase());
+
+    return matchesPriority && matchesSearch;
+  });
 
   if (!filteredTasks.length) {
     return (
