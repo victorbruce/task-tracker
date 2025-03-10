@@ -14,7 +14,7 @@ vi.mock("../../context/TaskContext", () => ({
 
 describe("Tasks Component", () => {
   it("should display one or more tasks", () => {
-    render(<Tasks />);
+    render(<Tasks searchQuery="task 1"/>);
 
     const tasks = screen.getAllByTestId("task");
     expect(tasks.length).toBeGreaterThanOrEqual(1);
