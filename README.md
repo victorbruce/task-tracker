@@ -2,11 +2,12 @@
 
 A task tracker app with priority filter.
 
-Live Link:
+Live Link: [task-tracker-vi.vercel.app](https://task-tracker-vi.vercel.app/)
 
 ## 📌 Table of Contents
 
 - [🚀 Getting Started](#-getting-started)
+- [🛠️ Tech Stack](#-tech-stack)
 - [✅ Prerequisites](#-prerequisites)
 - [📦 Installing](#-installing)
 - [💻 Running the Application](#-running-the-application)
@@ -19,6 +20,13 @@ Live Link:
 ## 🚀 Getting Started
 
 This project is built with [Vite](https://vite.dev/) and requires Node.js 18+ or 20+. Follow the steps below to set up and run the project.
+
+## 🛠️ Tech Stack
+
+- ReactJs: to build ui components
+- Typescript: for type checkings
+- CSS Modules: for styling
+- Vitest & React Testing Library: for unit testing ui components
 
 ## ✅ Prerequisites
 
