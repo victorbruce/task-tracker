@@ -19,14 +19,4 @@ describe("Tasks Component", () => {
     const tasks = screen.getAllByTestId("task");
     expect(tasks.length).toBeGreaterThanOrEqual(1);
   });
-
-  // it("should display 'No tasks available' when there are no tasks", () => {
-  //   render(
-  //     <TaskProvider>
-  //       <Tasks />
-  //     </TaskProvider>
-  //   );
-
-  //   expect(screen.getByText(/No tasks available/i)).toBeInTheDocument();
-  // });
 });

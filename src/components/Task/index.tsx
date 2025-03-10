@@ -35,7 +35,7 @@ const Task = ({ task }: { task: ITask }) => {
       {isModalOpen && (
         <EditTaskModal
           isOpen={isModalOpen}
-          onClose={setIsModalOpen}
+          onClose={() => setIsModalOpen(false)}
           task={task}
         />
       )}

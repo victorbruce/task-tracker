@@ -2,6 +2,20 @@
 
 A task tracker app with priority filter.
 
+Live Link:
+
+## 📌 Table of Contents
+
+- [🚀 Getting Started](#-getting-started)
+- [✅ Prerequisites](#-prerequisites)
+- [📦 Installing](#-installing)
+- [💻 Running the Application](#-running-the-application)
+- [🧪 Running the Tests](#-running-the-tests)
+- [📋 Approach](#-approach)
+- [📸 Screenshots](#-screenshots)
+- [🚀 Deployment](#-deployment)
+- [👤 Author](#-author)
+
 ## 🚀 Getting Started
 
 This project is built with [Vite](https://vite.dev/) and requires Node.js 18+ or 20+. Follow the steps below to set up and run the project.
@@ -53,8 +67,35 @@ npm run test
    - Wrote a **sample test** to verify the setup.
 
 3. **Setup Continuous Integration with GitHub Actions**
+
    - Configured **GitHub Actions** to run automated checks when a **pull request** is made to the `main` branch.
    - Added **dependency caching** to improve CI performance.
+
+4. **Update Docs**
+
+   - Next, I updated the docs to include how to run the project including tests.
+
+5. **Come up with a sketch to implement**
+
+   - I quickly came up with a rough sketch of how I will want the application to look, and feel.
+
+   ![UI sketch](./screenshots/sketch.webp)
+
+6. **Implement a good enough UI**
+
+   - I quickly developed a good enough UI and rendered static data and also unit test ui components
+
+7. **Implement all features**
+
+   - I then implemented the features required step by step whiles refactoring and expanding tests
+
+8. **Refactor code and ui**
+   - Lastly, I refactored the code and also improved the UI ensuring it's accessible across all the major devices.
+
+## 📸 Screenshots
+
+![screenshot of app](./screenshots/screenshot1.png)
+![screenshot of app](./screenshots/screenshot2.png)
 
 ## 🚀 Deployment
 

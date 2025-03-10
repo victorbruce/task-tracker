@@ -22,6 +22,12 @@
   overflow: hidden;
 }
 
+.taskBody p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media (max-width: 768px) {
   .taskHeader h2 {
     font-size: 18px;
@@ -30,9 +36,6 @@
   .taskBody p {
     font-size: 14px;
     color: #555;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
 
