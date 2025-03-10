@@ -52,31 +52,37 @@ const TaskForm = () => {
       </div>
 
       <button className={style.btn} type="submit" aria-label="Add Task">
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 25 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.2222 5.46631V19.4663"
-            stroke="white"
-            strokeWidth="2.5"
-            stroke-linecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M5.22217 12.4663H19.2222"
-            stroke="white"
-            strokeWidth="2.5"
-            stroke-linecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <AddIcon />
       </button>
     </form>
   );
 };
 
 export default TaskForm;
+
+const AddIcon = () => {
+  return (
+    <svg
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.2222 5.46631V19.4663"
+        stroke="white"
+        strokeWidth="2.5"
+        stroke-linecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5.22217 12.4663H19.2222"
+        stroke="white"
+        strokeWidth="2.5"
+        stroke-linecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
